@@ -3,102 +3,87 @@ import { motion } from "framer-motion";
 import newsletterVideo from "../assets/videos/newsletter.mp4";
 import { Link } from "react-router-dom";
 
-
-
-
-
-import sponsor3 from "../assets/images/sponsorship.png";
-import sponsor2 from "../assets/images/newscycle.png";
-import sponsor1 from "../assets/images/sponsorphoto.png";
-import sponsor9 from "../assets/images/sponserbike.png";
-import sponsor5 from "../assets/images/sponsorgroup.png";
-import sponsor6 from "../assets/images/sponsorshirt.png";
-import sponsor7 from "../assets/images/sponsorchris.png";
-import sponsor8 from "../assets/images/sponsorcooling.png";
-import sponsor4 from "../assets/images/sponsorend.png";
-import sponsor10 from "../assets/images/sponsoronnemen.png";
-import sponsor11 from "../assets/images/sponsorphoto.png";
-import sponsor12 from "../assets/images/sponsorrace.png";
 import PageTransition from "../components/PageTransition";
+import { sponsorNews } from "../Data/NewssponsData";
 
 function Newssponsor() {
       
 
-    const news = [
-  {
-    image: sponsor2,
-    category: "Sponsorships",
-    date: "15.04.26",
-    title: "ZeroWindShow - Colnago Lake Garda Cycling Festival 2026",
-  },
-  {
-    image: sponsor1,
-    category: "Sponsorships",
-    date: "13.04.26",
-    title: "ZeroWind Title Sponsor di ZeroWind Romeo&Giulietta Run half marathon",
-  },
-  {
-    image: sponsor3,
-    category: "Sponsorships",
-    date: "04.02.26",
-    title: "ZeroWind Title Sponsor di Romeo&Giulietta Run Half Marathon",
-  },
-  {
-    image: sponsor4,
-    category: "sponsorships",
-    date: "17.12.25",
-    title: "ZeroWind Gold Sponsor di Verona Christmas Run 2025",
-  },
-  {
-    image: sponsor5,
-    category: "Sponsorship",
-    date: "29.10.25",
-    title: "ZeroWind renews its partnership with Veneto Bike Cup",
-  },
-  {
-    image: sponsor6,
-    category: "Sponsorship",
-    date: "17.10.25",
-    title: "Alessio Magagnotti visits ZeroWind headquarters",
-  },
-  {
-    image: sponsor7,
-    category: "sponsorships",
-    date: "15.09.25",
-    title: "ZeroWind at Performance Days Ottobre 2025",
-  },
-  {
-    image: sponsor8,
-    category: "Sponsorships",
-    date: "14.06.25",
-    title: "ZeroWind sponsor del Team Riboli",
-  },
-  {
-    image: sponsor9,
-    category: "Sponsorships",
-    date: "2.04.25",
-    title: "ZeroWind at We Ride Flanders in partnership with Gobik",
-  },
-   {
-    image: sponsor10,
-    category: "sponsorships",
-    date: "15.09.25",
-    title: "ZeroWind at Performance Days Ottobre 2025",
-  },
+//     const news = [
+//   {
+//     image: sponsor2,
+//     category: "Sponsorships",
+//     date: "15.04.26",
+//     title: "ZeroWindShow - Colnago Lake Garda Cycling Festival 2026",
+//   },
+//   {
+//     image: sponsor1,
+//     category: "Sponsorships",
+//     date: "13.04.26",
+//     title: "ZeroWind Title Sponsor di ZeroWind Romeo&Giulietta Run half marathon",
+//   },
+//   {
+//     image: sponsor3,
+//     category: "Sponsorships",
+//     date: "04.02.26",
+//     title: "ZeroWind Title Sponsor di Romeo&Giulietta Run Half Marathon",
+//   },
+//   {
+//     image: sponsor4,
+//     category: "sponsorships",
+//     date: "17.12.25",
+//     title: "ZeroWind Gold Sponsor di Verona Christmas Run 2025",
+//   },
+//   {
+//     image: sponsor5,
+//     category: "Sponsorship",
+//     date: "29.10.25",
+//     title: "ZeroWind renews its partnership with Veneto Bike Cup",
+//   },
+//   {
+//     image: sponsor6,
+//     category: "Sponsorship",
+//     date: "17.10.25",
+//     title: "Alessio Magagnotti visits ZeroWind headquarters",
+//   },
+//   {
+//     image: sponsor7,
+//     category: "sponsorships",
+//     date: "15.09.25",
+//     title: "ZeroWind at Performance Days Ottobre 2025",
+//   },
+//   {
+//     image: sponsor8,
+//     category: "Sponsorships",
+//     date: "14.06.25",
+//     title: "ZeroWind sponsor del Team Riboli",
+//   },
+//   {
+//     image: sponsor9,
+//     category: "Sponsorships",
+//     date: "2.04.25",
+//     title: "ZeroWind at We Ride Flanders in partnership with Gobik",
+//   },
+//    {
+//     image: sponsor10,
+//     category: "sponsorships",
+//     date: "15.09.25",
+//     title: "ZeroWind at Performance Days Ottobre 2025",
+//   },
   
-  {
-    image: sponsor12,
-    category: "Sponsorships",
-    date: "2.04.25",
-    title: "ZeroWind at We Ride Flanders in partnership with Gobik",
-  },
-  {
-    image: sponsor11,
-    category: "Sponsorships",
-    date: "14.06.25",
-    title: "ZeroWind Show 2023: le premiazioni",
-  },
-];
+//   {
+//     image: sponsor12,
+//     category: "Sponsorships",
+//     date: "2.04.25",
+//     title: "ZeroWind at We Ride Flanders in partnership with Gobik",
+//   },
+//   {
+//     image: sponsor11,
+//     category: "Sponsorships",
+//     date: "14.06.25",
+//     title: "ZeroWind Show 2023: le premiazioni",
+//   },
+// ];
 
   
   return (
@@ -224,7 +209,8 @@ function Newssponsor() {
 
     <div className="grid grid-cols-3 gap-10">
 
-      {news.map((item, index) => (
+      {sponsorNews.map((item, index) => (
+        <Link to={`/news/${item.id}`}>
         <motion.div
           key={index}
           whileHover="hover"
@@ -276,6 +262,7 @@ function Newssponsor() {
           </h3>
 
         </motion.div>
+        </Link>
       ))}
 
     </div>

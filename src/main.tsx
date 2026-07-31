@@ -17,6 +17,8 @@ import NewsEvent from "./pages/NewsEvent";
 import Newssponsor from "./pages/Newssponsor";
 import NewsDetail from "./pages/NewsDetail";
 import Contact from "./pages/Contact";
+import Newsele from "./pages/Newsele";
+import NewssponsDetail from "./pages/NewssponsDetail";
 
 
 
@@ -41,8 +43,10 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 <Route path="/News/Products" element={<NewsProducts />} />
                 <Route path="/News/events" element={<NewsEvent />} />
                 <Route path="/News/sponsor" element={<Newssponsor />} />
-                <Route path="/news/:id" element={<NewsDetail />} />
-                <Route path="/contact" element={<Contact/>} />
+                {/* <Route path="/news/:id" element={<NewsDetail />} /> */}
+                <Route path="/News/ele" element={<Newsele />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/news/:id" element={<NewssponsDetail />} />
             </Route>
         </Routes>
     </BrowserRouter>

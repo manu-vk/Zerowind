@@ -2,7 +2,7 @@ import newsImg from "../assets/images/elepnt.png";
 import { motion } from "framer-motion";
 import newsletterVideo from "../assets/videos/newsletter.mp4";
 import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
 
 
 
@@ -19,6 +19,7 @@ import sponsor4 from "../assets/images/crowdevent.png";
 import PageTransition from "../components/PageTransition";
 
 function News() {
+   const navigate = useNavigate();
       
 
     const news = [
@@ -117,7 +118,7 @@ function News() {
            
 
         
-          <div className="group relative overflow-hidden rounded-[20px]">
+          <div onClick={() => navigate("/News/ele")}className="group relative overflow-hidden rounded-[20px]">
 
 
   <img
@@ -142,6 +143,7 @@ function News() {
   />
 
 </div>
+
 
           <div>
 

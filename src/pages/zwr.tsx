@@ -1,6 +1,6 @@
 import rainVideo from "../assets/videos/drops.mp4";
 import girl from "../assets/videos/girl.mp4";
-import zwrLogo from "../assets/svg/zwr.svg";
+import zwrLogo from "../assets/svg/ZWR.svg";
 import zwrIcon from "../assets/svg/rainDrop.svg";
 import rotateArrowIcon from "../assets/svg/Roundarrow.svg";
 

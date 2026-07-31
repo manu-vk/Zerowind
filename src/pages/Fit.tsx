@@ -24,7 +24,7 @@ import motionsvgg from "../assets/images/motionn.webp";
 
 import fitSvg from "../assets/svg/fit.svg";
 import motionsvg from "../assets/svg/Motion.svg";
-import zwrSvg from "../assets/svg/zwr.svg";
+import zwrSvg from "../assets/svg/ZWR.svg";
 
 
 function Fit() {

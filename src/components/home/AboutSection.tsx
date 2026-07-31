@@ -10,7 +10,7 @@ import zwLogo from "../../assets/svg/zw.svg";
 import girlVideo from "../../assets/videos/girl.mp4";
 import dropsVideo from "../../assets/videos/drops.mp4";
 
-import zwrSvg from "../../assets/svg/zwr.svg";
+import zwrSvg from "../../assets/svg/ZWR.svg";
 import reliefSvg from "../../assets/svg/relief.svg";
 
 

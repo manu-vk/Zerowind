@@ -23,7 +23,7 @@ import shirt6 from "../assets/images/shirt6.png";
 import powerSvg from "../assets/svg/power.svg";
 
 import motionSvg from "../assets/svg/motion.svg";
-import zwrSvg from "../assets/svg/zwr.svg";
+import zwrSvg from "../assets/svg/ZWR.svg";
 import PageTransition from "../components/PageTransition";
 
 

@@ -4,11 +4,6 @@ import newsletterVideo from "../assets/videos/newsletter.mp4";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
 
-
-
-
-
-
 import sponsor7 from "../assets/images/events2.png";
 import sponsor8 from "../assets/images/events3.png";
 import sponsor4 from "../assets/images/crowdevent.png";

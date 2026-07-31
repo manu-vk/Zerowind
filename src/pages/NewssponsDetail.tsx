@@ -4,7 +4,7 @@ import { Link, useParams } from "react-router-dom";
 
 import { sponsorNews } from "../Data/NewssponsData";
 import PageTransition from "../components/PageTransition";
-// import PageTransition from "../components/PageTransition";
+
 
 
 

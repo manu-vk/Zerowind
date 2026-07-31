@@ -10,7 +10,7 @@ import Motion from "./pages/motion";
 import Power from "./pages/Power";
 import Brave from "./pages/Brave";
 import Vapora from "./pages/vapora";
-import Zwr from "./pages/zwr";
+
 import News from "./pages/news";
 import NewsProducts from "./pages/NewsProducts";
 import NewsEvent from "./pages/NewsEvent";
@@ -19,6 +19,7 @@ import Newssponsor from "./pages/Newssponsor";
 import Contact from "./pages/Contact";
 import Newsele from "./pages/Newsele";
 import NewssponsDetail from "./pages/NewssponsDetail";
+import ZWR from "./pages/zwr";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
@@ -30,7 +31,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 <Route path="/power" element={<Power />} />
                 <Route path="/brave" element={<Brave />} />
                 <Route path="/Vapora" element={<Vapora />} />
-                <Route path="/zwr" element={<Zwr />} />
+                <Route path="/ZWR" element={<ZWR/>} />
                 <Route path="/News" element={<News />} />
                 <Route path="/News/Products" element={<NewsProducts />} />
                 <Route path="/News/events" element={<NewsEvent />} />

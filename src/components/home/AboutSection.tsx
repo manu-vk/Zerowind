@@ -10,7 +10,7 @@ import zwLogo from "../../assets/svg/zw.svg";
 import girlVideo from "../../assets/videos/girl.mp4";
 import dropsVideo from "../../assets/videos/drops.mp4";
 
-import zwrSvg from "../../assets/svg/ZWR.svg";
+import ZWRSvg from "../../assets/svg/ZWR.svg";
 import reliefSvg from "../../assets/svg/relief.svg";
 
 
@@ -163,7 +163,7 @@ const [showRightCursor, setShowRightCursor] = useState(false);
                <div className="mt-24 flex gap-10">
 
     
-    <div onClick={() => navigate("/zwr")} 
+    <div onClick={() => navigate("/ZWR")} 
         className="relative flex-1 overflow-hidden rounded-[32px] group"
         onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();
@@ -240,7 +240,7 @@ const [showRightCursor, setShowRightCursor] = useState(false);
         
         <div className="absolute inset-0 flex flex-col items-center justify-center pointer-events-none">
             <img
-                src={zwrSvg}
+                src={ZWRSvg}
                 alt="ZWR"
                 className="w-44"
             />
@@ -254,7 +254,7 @@ const [showRightCursor, setShowRightCursor] = useState(false);
     </div>
 
    
-    <div  onClick={() => navigate("/zwr#relife")}
+    <div  onClick={() => navigate("/ZWR#relife")}
         className="relative flex-1 overflow-hidden rounded-[32px] group"
         onMouseMove={(e) => {
             const rect = e.currentTarget.getBoundingClientRect();

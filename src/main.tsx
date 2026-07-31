@@ -15,18 +15,10 @@ import News from "./pages/news";
 import NewsProducts from "./pages/NewsProducts";
 import NewsEvent from "./pages/NewsEvent";
 import Newssponsor from "./pages/Newssponsor";
-import NewsDetail from "./pages/NewsDetail";
+
 import Contact from "./pages/Contact";
 import Newsele from "./pages/Newsele";
 import NewssponsDetail from "./pages/NewssponsDetail";
-
-
-
-"./components/layout/layout";
-"./components/layout/Layout";
-
-
-
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
     <BrowserRouter>
@@ -43,7 +35,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
                 <Route path="/News/Products" element={<NewsProducts />} />
                 <Route path="/News/events" element={<NewsEvent />} />
                 <Route path="/News/sponsor" element={<Newssponsor />} />
-                {/* <Route path="/news/:id" element={<NewsDetail />} /> */}
                 <Route path="/News/ele" element={<Newsele />} />
                 <Route path="/contact" element={<Contact />} />
                 <Route path="/news/:id" element={<NewssponsDetail />} />

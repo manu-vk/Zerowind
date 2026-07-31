@@ -10,8 +10,8 @@ import vaporaImg from "../../assets/images/vaporaa.webp";
 import fitLogo from "../../assets/svg/fit.svg";
 import motionLogo from "../../assets/svg/Motion.svg";
 import powerLogo from "../../assets/svg/power.svg";
-import braveLogo from "../../assets/svg/brave.svg";
-import vaporaLogo from "../../assets/svg/vapora.svg";
+import braveLogo from "../../assets/svg/Brave.svg";
+import vaporaLogo from "../../assets/svg/Vapora.svg";
 
 import waterproofIcon from "../../assets/svg/waterproof.svg";
 import windIcon from "../../assets/svg/wind.svg";

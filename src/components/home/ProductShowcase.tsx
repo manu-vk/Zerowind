@@ -14,8 +14,8 @@ import shirt6 from "../../assets/images/shirt6.png";
 import fitSvg from "../../assets/svg/fit.svg";
 import ZWRSvg from "../../assets/svg/ZWR.svg";
 import powerSvg from "../../assets/svg/power.svg";
-import braveSvg from "../../assets/svg/brave.svg";
-import motionSvg from "../../assets/svg/motion.svg";
+import braveSvg from "../../assets/svg/Brave.svg";
+import motionSvg from "../../assets/svg/Motion.svg";
 
 
 function ProductShowcase() {

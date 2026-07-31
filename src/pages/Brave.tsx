@@ -20,7 +20,7 @@ import shirt from "../assets/images/shirt1.png";
 import vaporaa from "../assets/images/vaporaa.webp";
 
 import vapora from "../assets/svg/Vapora.svg";
-import braveSvg from "../assets/svg/brave.svg";
+import braveSvg from "../assets/svg/Brave.svg";
 
 import zwrSvg from "../assets/svg/ZWR.svg";
 import PageTransition from "../components/PageTransition";
